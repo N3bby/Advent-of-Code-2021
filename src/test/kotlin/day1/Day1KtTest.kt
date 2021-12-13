@@ -3,7 +3,7 @@ package day1
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class Day1Test {
+class Day1KtTest {
 
     private val depthMeasurements = listOf(
         199,
@@ -19,13 +19,13 @@ class Day1Test {
     )
 
     @Test
-    internal fun `getCountOfMeasurementsThatAreLargerThanThePreviousMeasurement should return example result`() {
+    fun `getCountOfMeasurementsThatAreLargerThanThePreviousMeasurement should return example result`() {
         val count = getCountOfMeasurementsThatAreLargerThanThePreviousMeasurement(depthMeasurements)
         assertEquals(7, count)
     }
 
     @Test
-    internal fun `getCountOfSlidingWindowSumThatIsLargerThanThePreviousWindow should return example result`() {
+    fun `getCountOfSlidingWindowSumThatIsLargerThanThePreviousWindow should return example result`() {
         val count = getCountOfSlidingWindowSumThatIsLargerThanThePreviousWindow(depthMeasurements, 3)
         assertEquals(5, count)
     }

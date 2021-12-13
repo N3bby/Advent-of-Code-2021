@@ -3,7 +3,7 @@ package day2
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class Day2 {
+class Day2KtTest {
 
     private val exampleCommandString: List<String> = """
         forward 5
@@ -15,7 +15,7 @@ class Day2 {
     """.lines()
 
     @Test
-    internal fun `Moving a submarine following the example commands should arrive at the correct position`() {
+    fun `Moving a submarine following the example commands should arrive at the correct position`() {
         val commands = parseCommands(exampleCommandString)
 
         val submarine = Submarine()
@@ -26,7 +26,7 @@ class Day2 {
     }
 
     @Test
-    internal fun `AimedSubmarine is at correct position after executing example commands`() {
+    fun `AimedSubmarine is at correct position after executing example commands`() {
         val commands = parseCommands(exampleCommandString)
 
         val submarine = AimedSubmarine()
