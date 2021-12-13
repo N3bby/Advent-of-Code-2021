@@ -3,7 +3,7 @@ package day3
 import util.fromBinary
 import util.leastCommonElement
 import util.mostCommonElement
-import util.readResource
+import util.readResourceLines
 
 fun determineGammaRate(diagnosticReport: DiagnosticReport): Int {
     val binaryGammaRate = (0 until diagnosticReport[0].length)
@@ -65,7 +65,7 @@ fun determineLifeSupportRating(diagnosticReport: DiagnosticReport): Int {
 }
 
 fun main() {
-    val diagnosticReport = readResource("day3/input.txt")
+    val diagnosticReport = readResourceLines("day3/input.txt")
     println("Power consumption: ${determinePowerConsumption(diagnosticReport)}")
     println("Life support rating: ${determineLifeSupportRating(diagnosticReport)}")
 }

@@ -1,9 +1,9 @@
 package day2
 
-import util.readResource
+import util.readResourceLines
 
 fun main() {
-    val commands = parseCommands(readResource("day2/input.txt"))
+    val commands = parseCommands(readResourceLines("day2/input.txt"))
 
     println("Regular submarine")
     val submarine = Submarine()

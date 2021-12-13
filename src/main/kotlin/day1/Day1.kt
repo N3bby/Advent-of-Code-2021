@@ -1,6 +1,6 @@
 package day1
 
-import util.readResource
+import util.readResourceLines
 
 fun getCountOfMeasurementsThatAreLargerThanThePreviousMeasurement(depthMeasurements: List<Int>): Int {
     var count = 0
@@ -25,7 +25,7 @@ private fun <T> createListWindows(list: List<T>, windowSize: Int): List<List<T>>
 }
 
 fun main() {
-    val depthMeasurements = readResource("day1/input.txt").map { it.toInt() }
+    val depthMeasurements = readResourceLines("day1/input.txt").map { it.toInt() }
     println(getCountOfMeasurementsThatAreLargerThanThePreviousMeasurement(depthMeasurements))
     println("With sliding window of 3: " + getCountOfSlidingWindowSumThatIsLargerThanThePreviousWindow(depthMeasurements, 3))
 }
